@@ -12,15 +12,17 @@
 </head>
 <body>
 
-    <div id="app" class="container d-flex flex-column align-items-center">
-
-        <!-- title -->
-        <h1 :class="sizing" :style="{color}">{{title.toUpperCase()}}</h1>
-
-        <!-- img -->
-        <div class="square-img">
-            <img class="my-fluid" :src="img" :alt="img">
-        </div>
+    <div id="app">
+        <main class="d-flex flex-column align-items-center py-5" :class="bg">
+            <!-- title -->
+            <h1 :class="sizing,weight" :style="{color}" class="mb-5">
+                {{title.toUpperCase()}}
+            </h1>
+            <!-- img -->
+            <div class="square-img">
+                <img class="my-fluid" :src="img" :alt="img">
+            </div>
+        </main>
     </div>
     
     <!-- JS -->
