@@ -12,13 +12,15 @@
 </head>
 <body>
 
-    <div id="app">
+    <div id="app" class="container d-flex flex-column align-items-center">
 
         <!-- title -->
-        <h1></h1>
+        <h1 :class="sizing" :style="{color}">{{title.toUpperCase()}}</h1>
 
         <!-- img -->
-        <img src="" alt="">
+        <div class="square-img">
+            <img class="my-fluid" :src="img" :alt="img">
+        </div>
     </div>
     
     <!-- JS -->
